@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>📘 My Enhanced HTML5 Page</h1>
+        <p>Demonstrating lists, tables, media, and a complete HTML5 form.</p>
+    </header>
+
+    <main>
+        <!-- Content Section: Lists -->
+        <section>
+            <h2>My Top 3 Favorite Programming Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+            </ul>
+        </section>
+
+        <!-- Content Section: Table -->
+        <section>
+            <h2>Programming Language Popularity</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Year Created</th>
+                        <th>Usage Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>1991</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1995</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>1993</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Content Section: Media -->
+        <section>
+            <h2>Inspiring Coding Video</h2>
+            <iframe width="400" height="225" 
+                src="https://www.youtube.com/embed/h657S8x5AsU" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- HTML5 Form Section -->
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe">
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com" autocomplete="email">
+
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters">
+
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label for="language">Preferred Language:</label>
+                    <select id="language" name="language" required>
+                        <option value="">--Select--</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="htmlcss">HTML & CSS</option>
+                    </select>
+
+                    <br><br>
+
+                    <label>Subscribe to newsletter:</label>
+                    <input type="radio" id="yes" name="newsletter" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="newsletter" value="no">
+                    <label for="no">No</label>
+
+                    <br><br>
+
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write your message here..."></textarea>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created for HTML5 practice. &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
